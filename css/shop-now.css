@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.shop-now {
+    background-image: url(../img/shop_now_background.png);
+    background-size: cover;
+    background-position: 35.63% 82.12%;
+    min-height: 425px;
+    width: auto;
+    margin-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+    .shop-now {
+        min-height: 640px;
+    }
+}
+
+@media (min-width: 992px) {
+    .shop-now {
+        min-height: 803px;
+    }
+}
+
+.shop-now__text {
+    padding: 110px 24px 110px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 992px) {
+    .shop-now__text {
+        padding: 230px 24px 110px 170px;
+    }
+
+}
+
+.shop-now__subheader,
+.shop-now__h2 {
+    font-family: "Bebas Neue", cursive;
+}
+
+.shop-now__subheader {
+    color: rgba(34, 35, 35, 0.12);
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.shop-now__h2 {
+    color: #ffffff;
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 62px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+    .shop-now__h2 {
+        font-size: 92px;
+        padding-right: 385px;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .shop-now__h2 {
+        font-size: 124px;
+        padding-right: 595px;
+    }
+}
+
+.shop-now__button {
+    font-family: "PT Sans", sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 20px 26px;
+    margin: 16px 0;
+    width: fit-content;
+}
+
+.shop-now__button:hover {
+    color: #ffffff;
+    background-color: #000000;
+}

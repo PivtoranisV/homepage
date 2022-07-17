@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap');
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.sale {
+    margin: 70px 10px;
+}
+
+.sale__text-container {
+    display: block;
+    width: 85%;
+    margin: auto;
+}
+
+.sale__h2 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.sale__special-divider {
+    border: none;
+    background-color: #e0e0e0;
+    height: 2px;
+    width: 10%;
+    margin: 12px auto;
+}
+
+.sale__text {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #717474;
+}
+
+.sale__items {
+    display: grid;
+    justify-items: center;
+    gap: 7px;
+}
+
+@media (min-width: 480px) {
+    .sale__items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .e {
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+}
+
+@media (min-width: 768px) {
+    .sale__items {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .e {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .sale__h2 {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 990px) {
+    .sale__items {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .e {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+    }
+
+    .sale__h2 {
+        font-size: 52px;
+    }
+}
+
+
+.sale__items-item {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    border-style: solid;
+    border-width: 7px;
+    border-image: linear-gradient(180deg, rgb(0, 139, 252), rgb(255, 255, 1)) 1;
+    padding: 5px;
+}
+
+.sale__items-item-img {
+    box-sizing: border-box;
+    width: auto;
+    margin: 20px;
+}
+
+.sale__items-item-link {
+    display: block;
+    color: #717474;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.sale__items-item-link:hover {
+    text-decoration: underline;
+}
+
+.sale__items-item-price {
+    color: #f40106;
+    margin-top: 16px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+
+.sale__items-item-button {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #222323;
+    border-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 26px;
+    margin: 16px 0;
+}
+
+.sale__items-item-button:hover {
+    background-color: #f40106;
+}
+
+.special-dot {
+    color: #f40106;
+}
